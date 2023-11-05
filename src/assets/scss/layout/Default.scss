@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Crimson;
+    src: url("../../fonts/CrimsonText-Regular.ttf");
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url("../../fonts/Roboto-Regular.ttf");
+  }
+  
+  @mixin displayFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  :root {
+    --deepblue-color: #0c2b5e;
+    --deepblue-color-hover: #123979;
+    --deepblue-color-focus: #29559b;
+    --goldenyellow-color: #ffd700;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    font-family: Roboto, Crimson, Arial, Helvetica, sans-serif;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .paddingy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    @include displayFlex();
+  }
+  
+  .container {
+    max-width: 100%;
+    min-height: 400px;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      width: 1320px;
+    }
+  }
+  
